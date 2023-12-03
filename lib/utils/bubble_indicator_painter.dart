@@ -9,14 +9,14 @@ class BubbleIndicatorPainter extends CustomPainter {
       this.dxEntry = 25.0,
       this.radius = 21.0,
       this.dy = 25.0,
-      this.pageController})
+      required this.pageController})
       : super(repaint: pageController) {
     painter = Paint()
       ..color = CustomTheme.white
       ..style = PaintingStyle.fill;
   }
 
-  Paint painter;
+  late Paint painter;
   final double dxTarget;
   final double dxEntry;
   final double radius;
