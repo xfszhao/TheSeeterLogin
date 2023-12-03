@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 
 class CustomSnackBar {
   CustomSnackBar(BuildContext context, Widget content,
-      {snackBarAction = SnackBarAction, Color backgroundColor = Colors.green}) {
+      {Color backgroundColor = Colors.green}) {
     final SnackBar snackBar = SnackBar(
-        action: snackBarAction,
+        action: SnackBarAction(
+          label: 'clicked',
+          onPressed: () {},
+        ),
         backgroundColor: backgroundColor,
         content: content,
         behavior: SnackBarBehavior.floating);

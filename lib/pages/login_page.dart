@@ -57,15 +57,16 @@ class _LoginPageState extends State<LoginPage>
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(top: 75.0),
+                padding: const EdgeInsets.only(top: 45.0),
                 child: Image(
                     height:
-                        MediaQuery.of(context).size.height > 800 ? 191.0 : 150,
+                        MediaQuery.of(context).size.height > 800 ? 291.0 : 250,
                     fit: BoxFit.fill,
-                    image: const AssetImage('assets/img/login_logo.png')),
+                    image: const AssetImage('assets/img/SeeterSimple.png')),
+                //image: const AssetImage('assets/img/login_logo.png')),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 20.0),
+                padding: const EdgeInsets.only(top: 0.0),
                 child: _buildMenuBar(context),
               ),
               Expanded(

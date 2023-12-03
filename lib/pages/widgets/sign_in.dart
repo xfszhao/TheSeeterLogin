@@ -174,6 +174,7 @@ class _SignInState extends State<SignIn> {
                   'Forgot Password?',
                   style: TextStyle(
                       decoration: TextDecoration.underline,
+                      decorationColor: Colors.white,
                       color: Colors.white,
                       fontSize: 16.0,
                       fontFamily: 'WorkSansMedium'),
